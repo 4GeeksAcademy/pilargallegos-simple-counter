@@ -9,8 +9,8 @@ export const NavbarComponent = ({ currentPage, setPage }) => {
                 <Navbar.Toggle />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav>
-                        <Nav.Link onClick={() => setPage("Landing")}>Landing Page</Nav.Link>
-                        <Nav.Link onClick={() => setPage("Counter")}>Counter Page</Nav.Link>
+                        <Nav.Link onClick={() => setPage("Landing")} active={currentPage==="Landing"}>Landing Page</Nav.Link>
+                        <Nav.Link onClick={() => setPage("Counter")} active={currentPage==="Counter"}>Counter Page</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
